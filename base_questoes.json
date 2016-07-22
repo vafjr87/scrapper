@@ -1,0 +1,779 @@
+[
+  {
+    "Critério": "Presteza",
+    "Questão": 1,
+    "Descrição": "Os títulos de telas, janelas e caixas de diálogo estão no alto, centrados ou justificados à esquerda?",
+    "Tipo": ["botoes", "imagens", "cabecalhos", "links", "textos", "selects"],
+    "Submeter": true
+  },
+  {
+    "Critério": "Presteza",
+    "Questão": 2,
+    "Descrição": "Todos os campos e mostradores de dados possuem rótulos identificativos?",
+    "Tipo": ["botoes", "imagens", "cabecalhos", "links", "textos", "selects"],
+    "Submeter": true
+  },
+  {
+    "Critério": "Presteza",
+    "Questão": 3,
+    "Descrição": "Caso o dado a entrar possua um formato particular, esse formato encontra-se descrito na tela?",
+    "Tipo": ["botoes", "imagens", "cabecalhos", "links", "textos", "selects"],
+    "Submeter": true
+  },
+  {
+    "Critério": "Presteza",
+    "Questão": 4,
+    "Descrição": "As unidades para a entrada ou apresentação de dados métricos ou financeiros encontram-se descritas na tela?",
+    "Tipo": ["textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Presteza",
+    "Questão": 5,
+    "Descrição": "Os rótulos dos campos contêm um elemento específico, por exemplo \":\", como convite às entradas de dados?",
+    "Tipo": ["textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Presteza",
+    "Questão": 6,
+    "Descrição": "Caso o dado a entrar possua valores aceitáveis esses valores encontram-se descritos na tela?",
+    "Tipo": ["textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Presteza",
+    "Questão": 7,
+    "Descrição": "Listas longas apresentam indicadores de continuação, de quantidade de itens e de páginas?",
+    "Tipo": ["botoes", "imagens", "cabecalhos", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Presteza",
+    "Questão": 8,
+    "Descrição": "As tabelas apresentam cabeçalhos para linhas e colunas consistentes e distinguíveis dos dados apresentados?",
+    "Tipo": ["tabelas"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Presteza",
+    "Questão": 9,
+    "Descrição": "Os gráficos possuem um título geral e rótulos para seus eixos?",
+    "Tipo": ["imagens"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Presteza",
+    "Questão": 10,
+    "Descrição": "Os botões que comandam a apresentação de caixas de diálogo apresentam em seus rótulos o sinal \"...\" como indicador da continuidade do diálogo?",
+    "Tipo": ["botoes", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Presteza",
+    "Questão": 11,
+    "Descrição": "As páginas de menus possuem títulos, cabeçalhos ou convites à entrada?",
+    "Tipo": ["selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Presteza",
+    "Questão": 12,
+    "Descrição": "As opções de menu que levam a outros painéis de menu apresentam o sinal \">\" como indicador desse fato?",
+    "Tipo": ["botoes", "links", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Presteza",
+    "Questão": 13,
+    "Descrição": "O usuário encontra disponíveis as informações necessárias para suas ações?",
+    "Tipo": ["botoes", "imagens", "cabecalhos", "links", "textos", "selects"],
+    "Submeter": true
+  },
+  {
+    "Critério": "Presteza",
+    "Questão": 14,
+    "Descrição": "Nas caixas de mensagens de erro, o botão de comando \"AJUDA\" está sempre presente?",
+    "Tipo": ["botoes", "imagens", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Presteza",
+    "Questão": 15,
+    "Descrição": "O usuário pode obter facilmente ajuda on line e contextual sobre as funcionalidades?",
+    "Tipo": ["botoes", "imagens", "cabecalhos", "links", "textos", "selects"],
+    "Submeter": true
+  },
+  {
+    "Critério": "Presteza",
+    "Questão": 17,
+    "Descrição": "Na ocorrência de erros, o usuário pode acessar todas as informações necessárias ao diagnóstico e à solução do problema?",
+    "Tipo": ["botoes", "imagens", "cabecalhos", "links", "textos", "selects"],
+    "Submeter": true
+  },
+  {
+    "Critério": "Agrupamento por Localização",
+    "Questão": 1,
+    "Descrição": "O espaço de apresentação está diagramado em pequenas zonas funcionais?",
+    "Tipo": ["botoes", "imagens", "cabecalhos", "links", "textos", "selects"],
+    "Submeter": true
+  },
+  {
+    "Critério": "Agrupamento por Localização",
+    "Questão": 2,
+    "Descrição": "A disposição dos objetos de interação de uma caixa de dialogo segue uma ordem lógica?",
+    "Tipo": ["botoes", "imagens", "cabecalhos", "links", "textos", "selects"],
+    "Submeter": true
+  },
+  {
+    "Critério": "Agrupamento por Localização",
+    "Questão": 3,
+    "Descrição": "Nos agrupamentos de dados, os itens estão organizados espacialmente segundo um critério lógico?",
+    "Tipo": ["botoes", "imagens", "cabecalhos", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Agrupamento por Localização",
+    "Questão": 4,
+    "Descrição": "Os códigos das teclas aceleradoras de opções de menu estão localizados à direita do nome da opção?",
+    "Tipo": ["selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Agrupamento por Localização",
+    "Questão": 5,
+    "Descrição": "Nas listas de seleção, as opções estão organizadas segundo alguma ordem lógica?",
+    "Tipo": ["selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Agrupamento por Localização",
+    "Questão": 6,
+    "Descrição": "Os paineis de menu são formados a partir de um critério lógico de agrupamento de opções?",
+    "Tipo": ["links", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Agrupamento por Localização",
+    "Questão": 7,
+    "Descrição": "Dentro de um painel de menu, as opções mutuamente exclusivas ou interdependentes estão agrupadas e separadas das demais?",
+    "Tipo": ["selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Agrupamento por Localização",
+    "Questão": 8,
+    "Descrição": "As opções dentro de um painel de menu estão ordenadas segundo algum critério lógico?",
+    "Tipo": ["selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Agrupamento por Localização",
+    "Questão": 9,
+    "Descrição": "A definição da opção de menu selecionada por default segue algum critério?",
+    "Tipo": ["selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Agrupamento por Localização",
+    "Questão": 10,
+    "Descrição": "Os grupos de botões de comando estão dispostos em coluna e à direita, ou em linha e abaixo dos objetos aos quais estão associados?",
+    "Tipo": ["botoes"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Agrupamento por Localização",
+    "Questão": 11,
+    "Descrição": "O botão de comando selecionado por default está na posição mais alta, se os botões estão dispostos verticalmente, ou na mais à esquerda, se os botões estão dispostos",
+    "Tipo": ["botoes"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Agrupamento por Formato",
+    "Questão": 1,
+    "Descrição": "Os controles e comandos encontram-se visualmente diferenciados das informações apresentadas nas telas?",
+    "Tipo": ["botoes", "cabecalhos", "links", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Agrupamento por Formato",
+    "Questão": 2,
+    "Descrição": "Códigos visuais são empregados para associar diferentes categorias de dados distribuídos de forma dispersa nas telas?",
+    "Tipo": ["botoes", "imagens", "cabecalhos", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Agrupamento por Formato",
+    "Questão": 3,
+    "Descrição": "Os diferentes tipos de elementos de uma tela de consulta (dados, comandos e instruções) são visualmente distintos uns dos outros?",
+    "Tipo": ["botoes", "imagens", "cabecalhos", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Agrupamento por Formato",
+    "Questão": 4,
+    "Descrição": "Os rótulos são visualmente diferentes dos dados aos quais estão associados?",
+    "Tipo": ["botoes", "imagens", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Agrupamento por Formato",
+    "Questão": 5,
+    "Descrição": "Os cabeçalhos de uma tabela estão diferenciados através do emprego de cores diferentes, letras maiores ou sublinhadas?",
+    "Tipo": ["tabelas"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Agrupamento por Formato",
+    "Questão": 6,
+    "Descrição": "Em situações anormais, os dados críticos e que requeiram atenção imediata são diferenciados através do uso de cores brilhantes como por exemplo, o vermelho ou o rosa?",
+    "Tipo": ["botoes", "imagens", "cabecalhos", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Agrupamento por Formato",
+    "Questão": 7,
+    "Descrição": "Sinais sonoros são empregados para alertar os usuários em relação a uma apresentação visual?",
+    "Tipo": ["imagens"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Agrupamento por Formato",
+    "Questão": 8,
+    "Descrição": "Na apresentação de textos, os recursos de estilo, como itálico, negrito, sublinhado ou diferentes fontes são empregados para salientar palavras ou noções importantes?",
+    "Tipo": ["cabecalhos", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Agrupamento por Formato",
+    "Questão": 9,
+    "Descrição": "Os itens selecionados para alteração, atualização ou acionamento estão destacados dos outros?",
+    "Tipo": ["botoes", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Agrupamento por Formato",
+    "Questão": 10,
+    "Descrição": "Nas situações de alarme e nas telas de alta densidade de informação, o recurso de intermitência visual é empregado para salientar dados e informações?",
+    "Tipo": ["textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Agrupamento por Formato",
+    "Questão": 11,
+    "Descrição": "Os campos obrigatórios são diferenciados dos campos opcionais de forma visualmente clara?",
+    "Tipo": ["textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Agrupamento por Formato",
+    "Questão": 12,
+    "Descrição": "Nas caixas de mensagens, o botão selecionado por default tem uma apresentação visual suficientemente distinta dos outros?",
+    "Tipo": ["textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Agrupamento por Formato",
+    "Questão": 13,
+    "Descrição": "Em situações em que se exija atenção especial do usuário, as mensagens de alerta e de aviso são apresentadas de maneira distinta?",
+    "Tipo": ["botoes", "imagens", "cabecalhos", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Agrupamento por Formato",
+    "Questão": 14,
+    "Descrição": "A forma do cursor do mouse é diferente da de qualquer outro item apresentado?",
+    "Tipo": ["botoes", "imagens", "cabecalhos", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Agrupamento por Formato",
+    "Questão": 15,
+    "Descrição": "As formas de cursores (dois ou mais) apresentados simultaneamente são suficientemente distintas umas das outras?",
+    "Tipo": ["botoes", "imagens", "cabecalhos", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Agrupamento por Formato",
+    "Questão": 16,
+    "Descrição": "As caixas de agrupamento são empregadas para realçar um grupo de dados relacionados?",
+    "Tipo": ["botoes", "imagens", "cabecalhos", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Agrupamento por Formato",
+    "Questão": 17,
+    "Descrição": "Quando apresenta opções não disponíveis no momento, o sistema as mostra de forma diferenciada visualmente?",
+    "Tipo": ["selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Feedback",
+    "Questão": 1,
+    "Descrição": "O sistema fornece feedback para todas as ações do usuário?",
+    "Tipo": ["botoes", "imagens", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Feedback",
+    "Questão": 2,
+    "Descrição": "Quando, durante a entrada de dados, o sistema torna-se indisponível ao usuário, devido a algum processamento longo, o usuário é avisado desse estado do sistema e do tempo dessa indisponibilidade?",
+    "Tipo": ["botoes", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Feedback",
+    "Questão": 3,
+    "Descrição": "O sistema fornece informações sobre o estado das impressões?",
+    "Tipo": ["imagens", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Feedback",
+    "Questão": 4,
+    "Descrição": "Os itens selecionados de uma lista são realçados visualmente de imediato?",
+    "Tipo": ["selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Feedback",
+    "Questão": 5,
+    "Descrição": "A imagem do cursor fornece feedback dinâmico e contextual sobre a manipulação direta?",
+    "Tipo": ["botoes", "imagens", "cabecalhos", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Feedback",
+    "Questão": 6,
+    "Descrição": "O sistema fornece ao usuário informações sobre o tempo de processamentos demorados?",
+    "Tipo": ["botoes", "links", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Feedback",
+    "Questão": 7,
+    "Descrição": "O sistema apresenta uma mensagem informando sobre o sucesso ou fracasso de um processamento demorado?",
+    "Tipo": ["botoes", "links", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Feedback",
+    "Questão": 8,
+    "Descrição": "O sistema fornece feedback imediato e contínuo das manipulações diretas?",
+    "Tipo": ["botoes", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Feedback",
+    "Questão": 9,
+    "Descrição": "O sistema define o foco das ações para os objetos recém criados ou recém abertos?",
+    "Tipo": ["botoes", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Feedback",
+    "Questão": 10,
+    "Descrição": "O sistema fornece feedback sobre as mudanças de atributos dos objetos?",
+    "Tipo": ["botoes", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Feedback",
+    "Questão": 11,
+    "Descrição": "Qualquer mudança na situação atual de objetos de controle é apresentada visualmente de modo claro ao usuário?",
+    "Tipo": ["botoes", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Feedback",
+    "Questão": 12,
+    "Descrição": "O sistema fornece um histórico dos comandos entrados pelo usuário durante uma sessão de trabalho?",
+    "Tipo": ["botoes", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Legibilidade",
+    "Questão": 1,
+    "Descrição": "As áreas livres são usadas para separar grupos lógicos em vez de tê-los todos de um só lado da tela, caixa ou janela?",
+    "Tipo": ["botoes", "imagens", "cabecalhos", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Legibilidade",
+    "Questão": 2,
+    "Descrição": "Os grupos de objetos de controle e de apresentação que compõem as caixas de diálogo e outros objetos compostos encontram-se alinhados vertical e horizontalmente?",
+    "Tipo": ["botoes", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Legibilidade",
+    "Questão": 3,
+    "Descrição": "Os rótulos de campos organizados verticalmente e muito diferentes em tamanho estão justificados à direita?",
+    "Tipo": ["textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Legibilidade",
+    "Questão": 4,
+    "Descrição": "A largura mínima dos mostradores de texto é de 50 caracteres?",
+    "Tipo": ["cabecalhos", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Legibilidade",
+    "Questão": 5,
+    "Descrição": "A altura mínima dos mostradores de texto é de 4 linhas?",
+    "Tipo": ["cabecalhos", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Legibilidade",
+    "Questão": 6,
+    "Descrição": "Os parágrafos de texto são separados por, pelo menos, uma linha em branco?",
+    "Tipo": ["cabecalhos", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Legibilidade",
+    "Questão": 7,
+    "Descrição": "O uso exclusivo de maiúsculas nos textos é evitado?",
+    "Tipo": ["botoes", "imagens", "cabecalhos", "links", "textos", "selects", "tabelas"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Legibilidade",
+    "Questão": 8,
+    "Descrição": "O uso do negrito é minimizado?",
+    "Tipo": ["botoes", "imagens", "cabecalhos", "links", "textos", "selects", "tabelas"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Legibilidade",
+    "Questão": 9,
+    "Descrição": "O uso do sublinhado é minimizado?",
+    "Tipo": ["botoes", "imagens", "cabecalhos", "links", "textos", "selects", "tabelas"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Legibilidade",
+    "Questão": 10,
+    "Descrição": "Nas tabelas, linhas em branco são empregadas para separar grupos?",
+    "Tipo": ["tabelas"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Legibilidade",
+    "Questão": 11,
+    "Descrição": "As listas de dados alfabéticos são justificadas à esquerda?",
+    "Tipo": ["selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Legibilidade",
+    "Questão": 12,
+    "Descrição": "As listas contendo números decimais apresentam alinhamento pela vírgula?",
+    "Tipo": ["selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Legibilidade",
+    "Questão": 13,
+    "Descrição": "As linhas empregadas para o enquadramento e segmentação de menus (separadores, delimitadores etc.) são simples?",
+    "Tipo": ["selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Legibilidade",
+    "Questão": 14,
+    "Descrição": "As bordas dos painéis dos menus estão suficientemente separadas dos textos das opções de modo a não prejudicar a sua legibilidade?",
+    "Tipo": ["selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Legibilidade",
+    "Questão": 15,
+    "Descrição": "O uso de abreviaturas é minimizado nos menus?",
+    "Tipo": ["selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Legibilidade",
+    "Questão": 16,
+    "Descrição": "Os nomes das opções estão somente com a inicial em maiúsculo?",
+    "Tipo": ["botoes", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Legibilidade",
+    "Questão": 17,
+    "Descrição": "Os números que indicam as opções de menu estão alinhados pela direita?",
+    "Tipo": ["botoes", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Legibilidade",
+    "Questão": 18,
+    "Descrição": "Se a enumeração alfabética é utilizada, então as letras para seleção estão alinhadas pela esquerda?",
+    "Tipo": ["botoes", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Legibilidade",
+    "Questão": 19,
+    "Descrição": "As opções de uma barra de menu horizontal estão separadas por, no mínimo, 2 caracteres brancos?",
+    "Tipo": ["selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Legibilidade",
+    "Questão": 20,
+    "Descrição": "Os rótulos de campos começam com uma letra maiúscula, e as letras restantes são minúsculas?",
+    "Tipo": ["textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Legibilidade",
+    "Questão": 21,
+    "Descrição": "Os itens de dados longos são particionados em grupos mais curtos, tanto nas entradas como nas apresentações?",
+    "Tipo": ["botoes", "imagens", "cabecalhos", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Legibilidade",
+    "Questão": 22,
+    "Descrição": "Os códigos alfanuméricos do sistema agrupam separadamente letras e números?",
+    "Tipo": ["botoes", "imagens", "cabecalhos", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Legibilidade",
+    "Questão": 23,
+    "Descrição": "Os ícones são legíveis?",
+    "Tipo": ["imagens"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Legibilidade",
+    "Questão": 24,
+    "Descrição": "O sistema utiliza rótulos (textuais) quando pode existir ambiguidade de ícones?",
+    "Tipo": ["imagens"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Legibilidade",
+    "Questão": 25,
+    "Descrição": "A informação codificada com o vídeo reverso está sempre legível?",
+    "Tipo": ["botoes", "imagens", "cabecalhos", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Legibilidade",
+    "Questão": 26,
+    "Descrição": "O uso de vídeo reverso está restrito à indicação de feedback de seleção?",
+    "Tipo": ["botoes", "imagens", "cabecalhos", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Legibilidade",
+    "Questão": 27,
+    "Descrição": "Os dados a serem lidos são apresentados de forma contínua, não piscantes?",
+    "Tipo": ["botoes", "imagens", "cabecalhos", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Concisão",
+    "Questão": 1,
+    "Descrição": "O sistema oferece valores defaults para acelerar a entrada de dados?",
+    "Tipo": ["textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Concisão",
+    "Questão": 2,
+    "Descrição": "A identificação alfanumérica das janelas é curta o suficiente para ser relembrada facilmente?",
+    "Tipo": ["botoes", "imagens", "cabecalhos", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Concisão",
+    "Questão": 3,
+    "Descrição": "Os nomes das opções de menu são concisos?",
+    "Tipo": ["selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Concisão",
+    "Questão": 4,
+    "Descrição": "Os ícones são econômicos sob o ponto de vista do espaço nas telas?",
+    "Tipo": ["imagens"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Concisão",
+    "Questão": 5,
+    "Descrição": "As denominações são breves?",
+    "Tipo": ["botoes", "imagens", "cabecalhos", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Concisão",
+    "Questão": 6,
+    "Descrição": "As abreviaturas são curtas?",
+    "Tipo": ["botoes", "imagens", "cabecalhos", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Concisão",
+    "Questão": 7,
+    "Descrição": "Os códigos arbitrários que o usuário deve memorizar são sempre menores do que 4 ou 5 caracteres?",
+    "Tipo": ["textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Concisão",
+    "Questão": 8,
+    "Descrição": "Os rótulos são concisos?",
+    "Tipo": ["botoes", "imagens", "cabecalhos", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Concisão",
+    "Questão": 9,
+    "Descrição": "Códigos alfanuméricos não significativos para o usuário e que devem ser entrados no sistema são menores do que 7 caracteres?",
+    "Tipo": ["textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Concisão",
+    "Questão": 10,
+    "Descrição": "Na entrada de dados alfanuméricos, o sistema considera as letras maiúsculas e minúsculas como equivalentes?",
+    "Tipo": ["textos"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Concisão",
+    "Questão": 11,
+    "Descrição": "Na entrada de dados numéricos, o usuário é liberado do preenchimento do ponto decimal desnecessário?",
+    "Tipo": ["textos"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Concisão",
+    "Questão": 12,
+    "Descrição": "Na entrada de dados numéricos, o usuário é liberado do preenchimento do zeros fracionários desnecessários?",
+    "Tipo": ["textos"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Concisão",
+    "Questão": 13,
+    "Descrição": "Na entrada de valores métricos ou financeiros, o usuário é liberado do preenchimento da unidade de medida?",
+    "Tipo": ["textos"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Concisão",
+    "Questão": 14,
+    "Descrição": "É permitido ao usuário reaproveitar os valores definidos para entradas anteriores, podendo inclusive alterá-los?",
+    "Tipo": ["textos"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Ações Mínimas",
+    "Questão": 1,
+    "Descrição": "Em formulário de entrada de dados o sistema posiciona o cursor no começo do primeiro campo de entrada?",
+    "Tipo": ["textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Ações Mínimas",
+    "Questão": 2,
+    "Descrição": "Na realização das ações principais em uma caixa de diálogo, o usuário tem os movimentos de cursor minimizados através da adequada ordenação dos objetos?",
+    "Tipo": ["textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Ações Mínimas",
+    "Questão": 3,
+    "Descrição": "O usuário dispõe de um modo simples e rápido (tecla TAB por exemplo) para a navegação entre os campos de um formulário?",
+    "Tipo": ["botoes", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Ações Mínimas",
+    "Questão": 4,
+    "Descrição": "Os grupos de botões de comando possuem sempre um botão definido como default?",
+    "Tipo": ["botoes"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Ações Mínimas",
+    "Questão": 5,
+    "Descrição": "A estrutura dos menus é concebida de modo a diminuir os passos necessários para a seleção?",
+    "Tipo": ["selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Densidade Informacional",
+    "Questão": 1,
+    "Descrição": "A densidade informacional das janelas é reduzida?",
+    "Tipo": ["botoes", "cabecalhos","textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Densidade Informacional",
+    "Questão": 2,
+    "Descrição": "As telas apresentam somente os dados e informações necessários e indispensáveis para o usuário em sua tarefa?",
+    "Tipo": ["botoes", "cabecalhos", "links"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Densidade Informacional",
+    "Questão": 3,
+    "Descrição": "Na entrada de dados codificados, os códigos apresentam somente os dados necessários estão presentes na tela de uma maneira distinguível?",
+    "Tipo": ["botoes", "imagens", "cabecalhos", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Densidade Informacional",
+    "Questão": 4,
+    "Descrição": "O sistema minimiza a necessidade do usuário lembrar dados exatos de uma tela para outra?",
+    "Tipo": ["botoes", "imagens", "cabecalhos", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Densidade Informacional",
+    "Questão": 5,
+    "Descrição": "Na leitura de uma janela, o usuário tem seus movimentos oculares minimizados através da distribuição dos objetos principais segundo as linhas de um \"Z\"?",
+    "Tipo": ["botoes", "imagens", "cabecalhos", "links"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Densidade Informacional",
+    "Questão": 6,
+    "Descrição": "O sistema evita apresentar um grande número de janelas que podem desconcentrar ou sobrecarregar a memória do usuário?",
+    "Tipo": ["botoes", "imagens", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Densidade Informacional",
+    "Questão": 7,
+    "Descrição": "Na manipulação dos dados apresentados pelo sistema, o usuário está liberado da tradução de unidades?",
+    "Tipo": ["imagens", "cabecalhos", "links", "textos", "selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Densidade Informacional",
+    "Questão": 8,
+    "Descrição": "As listas de seleção e combinação apresentam uma altura correspondente a um máximo de nove linhas?",
+    "Tipo": ["selects"],
+    "Submeter": false
+  },
+  {
+    "Critério": "Densidade Informacional",
+    "Questão": 9,
+    "Descrição": "Os painéis de menu apresentam como ativas somente as opções necessárias?",
+    "Tipo": ["selects"],
+    "Submeter": false
+  }
+]
