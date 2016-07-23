@@ -59,7 +59,7 @@ def preparar_gravacao(nome_arquivo):
 
 
 def gerar_xml_parcial(arquivo, url, titulo, elementos):
-    raiz = et.Element('relatorio')  # create the element first...
+    raiz = et.Element('relatorio')  # create the element first
     tree = et.ElementTree(raiz)
 
     node = et.Element('URL')
@@ -79,22 +79,23 @@ def gerar_xml_parcial(arquivo, url, titulo, elementos):
 
     raiz.append(node)
 
-    if not '.xml' in arquivo:
-        arquivo += '.xml'
-
+    extensao = '.xml'
 
     try:
-        with open(arquivo, 'w', encoding='utf-8') as file:
+        with open(arquivo + extensao, 'w', encoding='utf-8') as file:
             tree.write(file, xml_declaration=True, encoding='unicode')
 
-        print('Resumo de elementos em formato XML criado no arquivo texto criado no arquivo:', arquivo)
+        print('Resumo de elementos em formato XML criado no arquivo texto criado no arquivo:', arquivo + extensao)
     except:
-        print('Erro na criação do relatório XML', arquivo)
+        print('Erro na criação do relatório XML', arquivo + extensao)
 
 
 def gerar_txt_parcial(arquivo, url, titulo, elementos):
+
+    extensao = '.txt'
+
     try:
-        relatorio = open(arquivo + '.txt', 'w')
+        relatorio = open(arquivo + extensao, 'w')
     except:
         print('Erro na criação do relatório', + arquivo + '.txt')
         exit()
@@ -107,7 +108,7 @@ def gerar_txt_parcial(arquivo, url, titulo, elementos):
     for key in sorted(elementos):
         relatorio.write('%s: %s\n' % (key, elementos[key]))
 
-    print('Resumo de elementos em formato TXT criado no arquivo:', arquivo + '.txt')
+    print('Resumo de elementos em formato TXT criado no arquivo:', arquivo + extensao)
 
     relatorio.close()
 
@@ -160,9 +161,11 @@ def gerar_questionario(arquivo, url, titulo, elementos):
     fquestoes = open('base_questoes.json')
     questoes = json.loads(fquestoes.read())
 
-    arquivo += 'QUEST' + '.txt'
+    extensao = '.txt'
+
+    arquivo += '_QUEST'
     try:
-        questionario = open(arquivo, 'w')
+        questionario = open(arquivo + extensao, 'w')
     except:
         print('Erro na criação do questionário', relatorio)
         exit()
@@ -233,7 +236,7 @@ def gerar_questionario(arquivo, url, titulo, elementos):
 
 
     questionario.close()
-    print('Questionário disponível em', arquivo)
+    print('Questionário disponível em', arquivo + extensao)
 
 
 
