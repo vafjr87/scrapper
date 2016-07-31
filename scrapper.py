@@ -24,13 +24,11 @@ def obter_pagina():
             url = input('Insira a URL da página Web: ')
 
         pagina = requests.get(validar_url(url))
-        print('Página a ser analisada:', pagina.url)
+        print('URL: {url}'.format(url=pagina.url))
         return pagina
     except:
-        print('O endereço "%s" não foi encontrado. Tente novamente.' % url)
-        print('Erro técnico:')
-        print(sys.exc_info()[0])
-        print(sys.exc_info()[1])
+        print('A URL {} não pode ser aberta. Verifique-a.'.format(url))
+        print('{}: {}'.format(sys.exc_info()[0], sys.exc_info()[1])
         exit()
 
 
@@ -41,24 +39,20 @@ def preparar_gravacao(nome_arquivo):
     if not os.path.exists(diretorio):
         os.makedirs(diretorio)
 
-    nomeRelatorio = nome_arquivo
-    nomeRelatorio = nomeRelatorio.replace('http://', '')
-    nomeRelatorio = nomeRelatorio.replace('https://', '')
-    nomeRelatorio = nomeRelatorio.replace('www.', '')
-    nomeRelatorio = nomeRelatorio.replace('.htm', '')
-    nomeRelatorio = nomeRelatorio.replace('.html', '')
-    nomeRelatorio = nomeRelatorio.replace('.asp', '')
-    nomeRelatorio = nomeRelatorio.replace('.php', '')
-    nomeRelatorio = nomeRelatorio.replace('/', '_')
+    remocao = (('http://', ''), ('https://', ''), ('www.', ''), ('.htm', ''),
+               ('.html', ''), ('.asp', ''), ('.php', ''), ('/', '_'))
 
-    if nomeRelatorio.endswith('_'):
-        nomeRelatorio = nomeRelatorio[:len(nomeRelatorio) - 1]
+    for item in remocao:
+        nome_arquivo = nome_arquivo.replace(item[0], item[1])
+
+    if nome_arquivo.endswith('_'):
+        nome_arquivo = nome_arquivo[:len(nome_arquivo) - 1]
 
 
-    return diretorio + nomeRelatorio
+    return diretorio + nome_arquivo
 
 
-def gerar_xml_parcial(arquivo, url, titulo, elementos):
+def gerar_xml_parcial(arquivo, url, titulo, elementos, extensao='.xml'):
     raiz = et.Element('relatorio')  # create the element first
     tree = et.ElementTree(raiz)
 
@@ -79,8 +73,6 @@ def gerar_xml_parcial(arquivo, url, titulo, elementos):
 
     raiz.append(node)
 
-    extensao = '.xml'
-
     try:
         with open(arquivo + extensao, 'w', encoding='utf-8') as file:
             tree.write(file, xml_declaration=True, encoding='unicode')
@@ -90,14 +82,12 @@ def gerar_xml_parcial(arquivo, url, titulo, elementos):
         print('Erro na criação do relatório XML', arquivo + extensao)
 
 
-def gerar_txt_parcial(arquivo, url, titulo, elementos):
-
-    extensao = '.txt'
+def gerar_txt_parcial(arquivo, url, titulo, elementos, extensao='.txt'):
 
     try:
-        relatorio = open(arquivo + extensao, 'w')
+        relatorio = open(arquivo + extensao, 'wt')
     except:
-        print('Erro na criação do relatório', + arquivo + '.txt')
+        print('Erro na abertura do arquivo ' + arquivo + extensao)
         exit()
 
     relatorio.write('-- Relatório -- \n')
@@ -105,8 +95,12 @@ def gerar_txt_parcial(arquivo, url, titulo, elementos):
     relatorio.write('Título: %s\n' % titulo)
     relatorio.write('\n-- Elementos --\n')
 
+    elementos_nome = {'botoes': 'Botões', 'imagens': 'Imagens', 'cabecalhos': 'Cabeçalhos',
+                      'links': 'Links', 'textos': 'Caixas de texto', 'selects': 'Listas de seleção/combinação',
+                      'tabelas': 'Tabelas'}
+
     for key in sorted(elementos):
-        relatorio.write('%s: %s\n' % (key, elementos[key]))
+        relatorio.write('%s: %s\n' % (elementos_nome[key], elementos[key]))
 
     print('Resumo de elementos em formato TXT criado no arquivo:', arquivo + extensao)
 
@@ -119,33 +113,22 @@ def analisar_elementos(soup):
 
     # Botões
     elementos['botoes'] += len(soup.find_all('button'))
-
-    for e in soup.find_all('input'):
-        if e.get('type') in ['button', 'submit', 'reset']:
-            elementos['botoes'] += 1
+    elementos['botoes'] += sum(1 if e.get('type') in ['button', 'submit', 'reset'] else 0 for e in soup.find_all('input'))
 
     # Imagens
     elementos['imagens'] += len(soup.find_all('img'))
-
-    for e in soup.find_all('input'):
-        if e.get('type') == 'image':
-            elementos['imagens'] += 1
+    elementos['imagens'] += sum(1 if e.get('type') == 'image' else 0 for e in soup.find_all('input'))
 
     # Cabeçalhos
     for x in range(6):
         elementos['cabecalhos'] += len(soup.find_all('h%d' % (x + 1)))
 
     # Links
-    for e in soup.find_all('a'):
-        if e.get('href'):
-            elementos['links'] += 1
+    elementos['links'] += sum(1 if e.get('href') else 0 for e in soup.find_all('a'))
 
     # Inputs
     elementos['textos'] += len(soup.find_all('textarea'))
-
-    for e in soup.find_all('input'):
-        if e.get('type') in ['text', 'email', 'password']:
-            elementos['textos'] += 1
+    elementos['textos'] += sum(1 if e.get('type') in ['text', 'email', 'password'] else 0 for e in soup.find_all('input'))
 
     # Selects
     elementos['selects'] += len(soup.find_all('select'))
