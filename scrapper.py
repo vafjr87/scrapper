@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
 import requests
 import sys
@@ -15,7 +16,6 @@ def validar_url(url):
 
     return url
 
-
 def obter_pagina():
     try:
         if len(sys.argv) > 1:
@@ -28,12 +28,11 @@ def obter_pagina():
         return pagina
     except:
         print('A URL {} não pode ser aberta. Verifique-a.'.format(url))
-        print('{}: {}'.format(sys.exc_info()[0], sys.exc_info()[1])
+        print('{}: {}'.format(sys.exc_info()[0], sys.exc_info()[1]))
         exit()
 
 
 def preparar_gravacao(nome_arquivo):
-
     diretorio = 'relatorios/'
 
     if not os.path.exists(diretorio):
@@ -220,7 +219,6 @@ def gerar_questionario(arquivo, url, titulo, elementos):
 
     questionario.close()
     print('Questionário disponível em', arquivo + extensao)
-
 
 
 # início
